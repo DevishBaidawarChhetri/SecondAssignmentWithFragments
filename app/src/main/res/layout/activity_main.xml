@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Second Assignment"
+        android:text="Second Assignment with Fragments"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 

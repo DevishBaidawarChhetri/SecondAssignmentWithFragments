@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import np.com.devish.secondassignmentwithfragments.fragments.Circle;
+import np.com.devish.secondassignmentwithfragments.fragments.Palindrome;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnCircle:
                 Circle circle = new Circle();
                 fragmentTransaction.replace(R.id.fragmentContainer, circle);
+                fragmentTransaction.commit();
+                break;
+            case R.id.btnPalendrome:
+                Palindrome palindrome = new Palindrome();
+                fragmentTransaction.replace(R.id.fragmentContainer, palindrome);
                 fragmentTransaction.commit();
                 break;
         }
