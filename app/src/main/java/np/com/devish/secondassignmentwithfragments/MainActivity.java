@@ -13,6 +13,7 @@ import np.com.devish.secondassignmentwithfragments.fragments.Automorphic;
 import np.com.devish.secondassignmentwithfragments.fragments.Circle;
 import np.com.devish.secondassignmentwithfragments.fragments.Palindrome;
 import np.com.devish.secondassignmentwithfragments.fragments.SimpleInterest;
+import np.com.devish.secondassignmentwithfragments.fragments.Swap;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -67,6 +68,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnArmstrong:
                 Armstrong armstrong = new Armstrong();
                 fragmentTransaction.replace(R.id.fragmentContainer, armstrong);
+                fragmentTransaction.commit();
+                break;
+            case R.id.btnSwapping:
+                Swap swap= new Swap();
+                fragmentTransaction.replace(R.id.fragmentContainer, swap);
                 fragmentTransaction.commit();
                 break;
         }
