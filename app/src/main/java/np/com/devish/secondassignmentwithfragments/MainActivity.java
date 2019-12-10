@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import np.com.devish.secondassignmentwithfragments.fragments.Armstrong;
 import np.com.devish.secondassignmentwithfragments.fragments.Automorphic;
 import np.com.devish.secondassignmentwithfragments.fragments.Circle;
 import np.com.devish.secondassignmentwithfragments.fragments.Palindrome;
@@ -61,6 +62,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnAutomorphic:
                 Automorphic automorphic = new Automorphic();
                 fragmentTransaction.replace(R.id.fragmentContainer, automorphic);
+                fragmentTransaction.commit();
+                break;
+            case R.id.btnArmstrong:
+                Armstrong armstrong = new Armstrong();
+                fragmentTransaction.replace(R.id.fragmentContainer, armstrong);
                 fragmentTransaction.commit();
                 break;
         }
